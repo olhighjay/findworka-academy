@@ -244,7 +244,7 @@
                                 where you are primarily focused on how the site works.</p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="//image/images/animate_icon/icon_5.png" alt="">
+                                    <img src="/image/images/animate_icon/icon_5.png" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5>Our Tutors</h5>
@@ -252,11 +252,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/star.svg" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -276,7 +276,7 @@
                                 management system which is suitable for any kind of business.. </p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="//image/images/animate_icon/icon_3.png" alt="">
+                                    <img src="/image/images/animate_icon/icon_3.png" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">Our Tutors</a></h5>
@@ -284,11 +284,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/star.svg" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -309,7 +309,7 @@
                                 It was the main challenge and concern for the..</p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="//image/images/animate_icon/icon_5.png" alt="">
+                                    <img src="/image/images/animate_icon/icon_5.png" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">Our Tutors</a></h5>
@@ -317,11 +317,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/star.svg" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -344,7 +344,7 @@
                                  first in their browser or application. </p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src=" //image/images/animate_icon/icon_5.png" alt="">
+                                    <img src=" /image/images/animate_icon/icon_5.png" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">Our Tutors</a></h5>
@@ -352,11 +352,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/star.svg" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -376,7 +376,7 @@
                                 kind of software development specific to mobile devices.. </p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="//image/images/animate_icon/icon_5.png" alt="">
+                                    <img src="/image/images/animate_icon/icon_5.png" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">Our Tutors</a></h5>
@@ -384,11 +384,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/star.svg" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -408,7 +408,7 @@
                                 engineering is the design of user interfaces for machines and software, ..</p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="//image/images/animate_icon/icon_3.png" alt="">
+                                    <img src="/image/images/animate_icon/icon_3.png" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">Our Tutors</a></h5>
@@ -416,11 +416,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="//image/images/icon/star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/image/images/icon/star.svg" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -464,7 +464,7 @@
             <div class="carousel-inner">		
                 <div class="jitem carousel-item active">
                     <br>
-                    <div class="jimg-box"><img src="//image/images/ileri.jpeg" alt=""></div>
+                    <div class="jimg-box"><img src="/image/images/ileri.jpeg" alt=""></div>
                     <p class="testimonial">From the deepest part of my heart, I want to thank Findworka academy for the transformational 
                         works they do on their students like me which has helped me to acquire thinga I've achieved in the IT world.</p>
                     <p class="overview"><b>Adebayo Ileriayo</b>Back-end Dev. gradutae at <a href="#">Findworka Academy</a></p>
@@ -480,7 +480,7 @@
                 </div>
                 <div class="jitem carousel-item">
                     <br>
-                    <div class="jimg-box"><img src="//image/images/mato.jpeg" alt=""></div>
+                    <div class="jimg-box"><img src="/image/images/mato.jpeg" alt=""></div>
                     <p class="testimonial">Findworka academy never fails. A try will convince anybody. They make learning of programing as simple as learning A, B, C 
                         and they give full support to their students durimg amd after their time at the academy</p>
                     <p class="overview"><b>Mato Martins</b>Back-end Dev. gradutae at <a href="#">Findworka Academy</a></p>
@@ -496,7 +496,7 @@
                 </div>
                 <div class="jitem carousel-item">
                     <br>
-                    <div class="jimg-box"><img src="//image/images/eje.jpeg" alt=""></div>
+                    <div class="jimg-box"><img src="/image/images/eje.jpeg" alt=""></div>
                     <p class="testimonial">I enrolled into findworka academy having no idea about backend or any programing at all. I was totally a novice that had no idea whatsoever about programming but Findworka academy picked me up and made me a big shot in te IT industry</p>
                     <p class="overview"><b>Bosipo Afeedufona</b>Back-end Dev. gradutae at <a href="#">Findworka Academy</a></p>
                     <div class="star-rating">
@@ -542,7 +542,7 @@
                     <div class="col-sm-6 col-lg-4 col-xl-4">
                         <div class="single-home-blog">
                             <div class="card">
-                                <img src="//image/cover_images/{{$post->cover_image}}" height="250px" width="100%" class="card-img-top" alt="blog">
+                                <img src="/image/cover_images/{{$post->cover_image}}" height="250px" width="100%" class="card-img-top" alt="blog">
                                 <div class="card-body">
                                     <a href="/blog/{{$post->title}}" class="btn_4" style="border-radius:15px">{{$post->category}}</a>
                                     <a href="/blog/{{$post->title}}">
