@@ -267,7 +267,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="storage/images/bnn44.jpg" style="border-top-left-radius:30px; border-top-right-radius:30px"  height="250px" width="100%" class="special_img" alt="">
+                        <img src="{{ secure_asset('storage/images/bnn44.jpg')}}" style="border-top-left-radius:30px; border-top-right-radius:30px"  height="250px" width="100%" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="/cms" class="btn_4" style="border-radius:20px">Web Design</a>
                             <h4>₦30,000</h4>
@@ -542,7 +542,7 @@
                     <div class="col-sm-6 col-lg-4 col-xl-4">
                         <div class="single-home-blog">
                             <div class="card">
-                                <img src="{{ secure_asset('/storage/cover_images/{{$post->cover_image}}')}}" height="250px" width="100%" class="card-img-top" alt="blog">
+                                <img src="/storage/cover_images/{{$post->cover_image}}" height="250px" width="100%" class="card-img-top" alt="blog">
                                 <div class="card-body">
                                     <a href="/blog/{{$post->title}}" class="btn_4" style="border-radius:15px">{{$post->category}}</a>
                                     <a href="/blog/{{$post->title}}">
