@@ -335,7 +335,7 @@
             <div class="row">
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="assets//image/images/ds1.jpg" style="border-top-left-radius:30px; border-top-right-radius:30px" height="250px"  width="100%" class="special_img" alt="">
+                        <img src="/image/images/ds1.jpg" style="border-top-left-radius:30px; border-top-right-radius:30px" height="250px"  width="100%" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="/front-end" class="btn_4" style="border-radius:20px">Web Development</a>
                             <h4>₦120,000</h4>
@@ -367,7 +367,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="assets//image/images/ds3.jpg" style="border-top-left-radius:30px; border-top-right-radius:30px"  height="250px" width="100%" class="special_img" alt="">
+                        <img src="/image/images/ds3.jpg" style="border-top-left-radius:30px; border-top-right-radius:30px"  height="250px" width="100%" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="/mobile" class="btn_4" style="border-radius:20px">App Development</a>
                             <h4>₦100,000</h4>
@@ -399,7 +399,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="assets//image/images/ui9.jpg" style="border-top-left-radius:30px; border-top-right-radius:30px"  height="250px" width="100%" class="special_img" alt="">
+                        <img src="/image/images/ui9.jpg" style="border-top-left-radius:30px; border-top-right-radius:30px"  height="250px" width="100%" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="/ui-ux" class="btn_4" style="border-radius:20px"> Design</a>
                             <h4>₦70,000</h4>
