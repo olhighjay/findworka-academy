@@ -192,7 +192,7 @@
             <div class="row align-items-sm-center align-items-lg-stretch">
                 <div class="col-md-7 col-lg-7">
                     <div class="learning_img">
-                        <img src="{{ secure_asset('/storage/images/learning.png')}}" alt="">
+                        <img src="storage/images/learning.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-5 col-lg-5">
@@ -235,7 +235,7 @@
             <div class="row">
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="{{ secure_asset('storage/images/ds8.png')}}" style="border-top-left-radius:30px; border-top-right-radius:30px" height="250px"  width="100%" class="special_img" alt="">
+                        <img src="storage/images/ds8.png" style="border-top-left-radius:30px; border-top-right-radius:30px" height="250px"  width="100%" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="/back-end" class="btn_4" style="border-radius:20px">Web Development</a>
                             <h4>₦150,000</h4>
@@ -244,7 +244,7 @@
                                 where you are primarily focused on how the site works.</p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="{{ secure_asset('/storage/images/animate_icon/icon_5.png')}}" alt="">
+                                    <img src="/storage/images/animate_icon/icon_5.png" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5>Our Tutors</h5>
@@ -252,11 +252,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/star.svg" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -267,7 +267,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="{{ secure_asset('storage/images/bnn44.jpg')}}" style="border-top-left-radius:30px; border-top-right-radius:30px"  height="250px" width="100%" class="special_img" alt="">
+                        <img src="storage/images/bnn44.jpg" style="border-top-left-radius:30px; border-top-right-radius:30px"  height="250px" width="100%" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="/cms" class="btn_4" style="border-radius:20px">Web Design</a>
                             <h4>₦30,000</h4>
@@ -276,7 +276,7 @@
                                 management system which is suitable for any kind of business.. </p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="{{ secure_asset('/storage/images/animate_icon/icon_3.png')}}" alt="">
+                                    <img src="/storage/images/animate_icon/icon_3.png" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">Our Tutors</a></h5>
@@ -284,11 +284,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/star.svg" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -299,7 +299,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="{{ secure_asset('storage/images/ds5.jpg')}}" style="border-top-left-radius:30px; border-top-right-radius:30px"  
+                        <img src="storage/images/ds5.jpg" style="border-top-left-radius:30px; border-top-right-radius:30px"  
                         height="250px" width="100%" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="/data-science" class="btn_4" style="border-radius:20px"> Data Analysis</a>
@@ -309,7 +309,7 @@
                                 It was the main challenge and concern for the..</p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="{{ secure_asset('/storage/images/animate_icon/icon_5.png')}}" alt="">
+                                    <img src="/storage/images/animate_icon/icon_5.png" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">Our Tutors</a></h5>
@@ -317,11 +317,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/star.svg" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -335,7 +335,7 @@
             <div class="row">
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="{{ secure_asset('assets/storage/images/ds1.jpg')}}" style="border-top-left-radius:30px; border-top-right-radius:30px" height="250px"  width="100%" class="special_img" alt="">
+                        <img src="assets/storage/images/ds1.jpg" style="border-top-left-radius:30px; border-top-right-radius:30px" height="250px"  width="100%" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="/front-end" class="btn_4" style="border-radius:20px">Web Development</a>
                             <h4>₦120,000</h4>
@@ -344,7 +344,7 @@
                                  first in their browser or application. </p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="{{ secure_asset(' /storage/images/animate_icon/icon_5.png')}}" alt="">
+                                    <img src=" /storage/images/animate_icon/icon_5.png" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">Our Tutors</a></h5>
@@ -352,11 +352,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/star.svg" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -367,7 +367,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="{{ secure_asset('assets/storage/images/ds3.jpg')}}" style="border-top-left-radius:30px; border-top-right-radius:30px"  height="250px" width="100%" class="special_img" alt="">
+                        <img src="assets/storage/images/ds3.jpg" style="border-top-left-radius:30px; border-top-right-radius:30px"  height="250px" width="100%" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="/mobile" class="btn_4" style="border-radius:20px">App Development</a>
                             <h4>₦100,000</h4>
@@ -376,7 +376,7 @@
                                 kind of software development specific to mobile devices.. </p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="{{ secure_asset('/storage/images/animate_icon/icon_5.png')}}" alt="">
+                                    <img src="/storage/images/animate_icon/icon_5.png" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">Our Tutors</a></h5>
@@ -384,11 +384,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/star.svg" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -399,7 +399,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="{{ secure_asset('assets/storage/images/ui9.jpg')}}" style="border-top-left-radius:30px; border-top-right-radius:30px"  height="250px" width="100%" class="special_img" alt="">
+                        <img src="assets/storage/images/ui9.jpg" style="border-top-left-radius:30px; border-top-right-radius:30px"  height="250px" width="100%" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="/ui-ux" class="btn_4" style="border-radius:20px"> Design</a>
                             <h4>₦70,000</h4>
@@ -408,7 +408,7 @@
                                 engineering is the design of user interfaces for machines and software, ..</p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="{{ secure_asset('/storage/images/animate_icon/icon_3.png')}}" alt="">
+                                    <img src="/storage/images/animate_icon/icon_3.png" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">Our Tutors</a></h5>
@@ -416,11 +416,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ secure_asset('/storage/images/icon/star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/color_star.svg" alt=""></a>
+                                        <a href="#"><img src="/storage/images/icon/star.svg" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -480,7 +480,7 @@
                 </div>
                 <div class="jitem carousel-item">
                     <br>
-                    <div class="jimg-box"><img src="{{ secure_asset('/storage/images/mato.jpeg')}}" alt=""></div>
+                    <div class="jimg-box"><img src="/storage/images/mato.jpeg" alt=""></div>
                     <p class="testimonial">Findworka academy never fails. A try will convince anybody. They make learning of programing as simple as learning A, B, C 
                         and they give full support to their students durimg amd after their time at the academy</p>
                     <p class="overview"><b>Mato Martins</b>Back-end Dev. gradutae at <a href="#">Findworka Academy</a></p>
@@ -496,7 +496,7 @@
                 </div>
                 <div class="jitem carousel-item">
                     <br>
-                    <div class="jimg-box"><img src="{{ secure_asset('/storage/images/eje.jpeg')}}" alt=""></div>
+                    <div class="jimg-box"><img src="/storage/images/eje.jpeg" alt=""></div>
                     <p class="testimonial">I enrolled into findworka academy having no idea about backend or any programing at all. I was totally a novice that had no idea whatsoever about programming but Findworka academy picked me up and made me a big shot in te IT industry</p>
                     <p class="overview"><b>Bosipo Afeedufona</b>Back-end Dev. gradutae at <a href="#">Findworka Academy</a></p>
                     <div class="star-rating">
