@@ -61,8 +61,8 @@
                     <div class="row display-table-row">
                         <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
                             <div class="logo">
-                                <a hef="home.html"><img src="/storage/images/findworka-sticker1.png"  alt="merkery_logo" class="hidden-xs hidden-sm">
-                                    <img src="/storage/images/findworka-sticker1.png"  alt="merkery_logo" class="visible-xs visible-sm circle-logo">
+                                <a hef="home.html"><img src="/image/images/findworka-sticker1.png"  alt="merkery_logo" class="hidden-xs hidden-sm">
+                                    <img src="/image/images/findworka-sticker1.png"  alt="merkery_logo" class="visible-xs visible-sm circle-logo">
                                 </a>
                             </div>
                             <div class="navi">

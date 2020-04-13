@@ -6,7 +6,7 @@
     /* The hero image */
     .heyo-image {
       /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("/storage/images/ui6.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("/image/images/ui6.jpg");
     
       /* Set a specific height */
       height: 80%;
@@ -75,7 +75,7 @@
         <div class="row align-items-sm-center align-items-lg-stretch">
         <div class="col-md-7 col-lg-7">
         <div class="jj">
-        <img src="/storage/images/ui1.png" width="440px" style="margin-left:50px" alt="">
+        <img src="/image/images/ui1.png" width="440px" style="margin-left:50px" alt="">
         </div>
         <br>
         <br>
@@ -120,7 +120,7 @@
 
 
         <div class="jj">
-          <img src="/storage/profile_pictures/findworka-map.jpg" width="300px" alt="">
+          <img src="/image/profile_pictures/findworka-map.jpg" width="300px" alt="">
         </div>
 
         </div>

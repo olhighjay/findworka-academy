@@ -41,9 +41,9 @@
 
 				<div class="p-4 pt-5" style="height:100%">
                 @if(Auth()->user()->profile_picture == null)
-                    <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(/storage/profile_pictures/findworka-map.jpg);"></a>
+                    <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(/image/profile_pictures/findworka-map.jpg);"></a>
                 @else
-                    <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(/storage/profile_pictures/{{Auth()->user()->profile_picture}});"></a>
+                    <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(/image/profile_pictures/{{Auth()->user()->profile_picture}});"></a>
                 @endif
                     <ul class="list-unstyled components mb-5">
 	            <li class="active">
@@ -183,7 +183,7 @@
 
         <!-- Page Content  -->
         <div id="content" class="p-4 p-md-5">
-            <a hef="/"><img src="/storage/images/findworka-sticker1.png"  alt="merkery_logo" style="width:150px"></a>
+            <a hef="/"><img src="/image/images/findworka-sticker1.png"  alt="merkery_logo" style="width:150px"></a>
                 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">

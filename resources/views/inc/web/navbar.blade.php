@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark  shadow-sm" style="background-color: navy" >
   <div class="container">
     <a class="navbar-brand" href="/">
-      <img src="/storage/images/findworka-logo1.png" width="120" height="30"  alt="Findworka academy logo">
+      <img src="/image/images/findworka-logo1.png" width="120" height="30"  alt="Findworka academy logo">
     </a>
 
 

@@ -13,7 +13,7 @@
                             <p>Findworka academy is an international IT institution founded by Findworka with the goal of creating next leading IT gurus in the world </p>
                             <br>
                             <a  href="/">
-                                <img src="/storage/images/findworka-logo1.png" width="120" height="30"  alt="Findworka academy logo">
+                                <img src="/image/images/findworka-logo1.png" width="120" height="30"  alt="Findworka academy logo">
                             </a>
                 
                         </div>

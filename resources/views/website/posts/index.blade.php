@@ -6,7 +6,7 @@
         /* The hero image */
         .heyo-image {
         /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-        /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/storage/images/bnn8.jpg"); */
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/image/images/bnn8.jpg"); */
         
         /* Set a specific height */
         height: 80%;
@@ -108,9 +108,9 @@
         <div id="wrapperHeader" class= "heo-image" style="margin-top: -20px; position:center">
             <div id="header">
                 @if($lastPost->cover_image != 'noimage.jpg')
-                    <img class= "heo-image" src="/storage/cover_images/{{$lastPost->cover_image}}"  alt="">
+                    <img class= "heo-image" src="/image/cover_images/{{$lastPost->cover_image}}"  alt="">
                 @else 
-                    <img src="/storage/cover_images/blog2.jpg" alt="">
+                    <img src="/image/cover_images/blog2.jpg" alt="">
                 @endif
             </div>
             <h1 style="text-align:center; color:#0C2164 !important">Blog Posts</h1>
@@ -127,7 +127,7 @@
                <div class=""> 
                    <div class="row">
                        <div class="col-dm-4 col-sm-4">
-                       <img style="width:100%" src="/storage/cover_images/{{$post->cover_image}}" height="250px" alt="cover image">
+                       <img style="width:100%" src="/image/cover_images/{{$post->cover_image}}" height="250px" alt="cover image">
                        <br> <br> <br>
                        </div>
                        
