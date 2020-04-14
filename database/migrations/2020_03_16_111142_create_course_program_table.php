@@ -28,8 +28,5 @@ class CreateCourseProgramTable extends Migration
     public function down()
     {
         Schema::dropIfExists('course_program');
-        $table->dropColumn('id');
-            $table->dropColumn('course_id');
-            $table->dropColumn('program_id');
     }
 }
