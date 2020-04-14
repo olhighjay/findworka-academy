@@ -6,7 +6,7 @@
     /* The hero image */
     .heyo-image {
       /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/storage/images/IT-Banner.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/image/images/IT-Banner.jpg");
     
       /* Set a specific height */
       height: 80%;
