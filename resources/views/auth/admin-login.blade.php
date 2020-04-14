@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <a class="row justify-content-center" hef="/"><img src="/storage/images/findworka-sticker1.png"  alt="merkery_logo" style="width:250px"></a>
+                <a class="row justify-content-center" hef="/"><img src="/image/images/findworka-sticker1.png"  alt="merkery_logo" style="width:250px"></a>
                 <h3 class="row justify-content-center"> Admin Login </h3>
                 
                 <div class="card">
