@@ -68,7 +68,7 @@ class AdminController extends Controller
             'email'=> 'required',
             'password'=> 'nullable',
             'gender'=> 'required',
-            'profile_picture'=>'image|required|max:1999'
+            'profile_picture'=>'image|nullable|max:1999'
         ]);
 
              // Handle file upload
@@ -844,7 +844,7 @@ class AdminController extends Controller
             } 
 
         if($post->cover_image != 'noimage.jpg'){
-            storage::delete('public/cover_images'.$post->cover_image);
+            storage::delete('/image/cover_images'.$post->cover_image);
         }
         $post->delete();
         return redirect('/admin/posts')->with('success', 'Post Deleted');

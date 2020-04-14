@@ -26,9 +26,9 @@
                 <!-- Profile picture -->
             <h1 style="text-align:center; color:crimson">{{$tutor->firstname}} {{$tutor->lastname}}</h1>
                 @if($tutor->profile_picture == null)
-                    <img class="mx-auto img-fluid  d-block" style="width:300px; height:310px" src="/storage/profile_pictures/noimage.jpg" alt="profile picture">
+                    <img class="mx-auto img-fluid  d-block" style="width:300px; height:310px" src="/image/profile_pictures/noimage.jpg" alt="profile picture">
                 @else
-                    <img class="mx-auto img-fluid rounded-circle d-block" style="width:300px; height:300px"  src="/storage/profile_pictures/{{$tutor->profile_picture}}" alt="profile picture"> 
+                    <img class="mx-auto img-fluid rounded-circle d-block" style="width:300px; height:300px"  src="/image/profile_pictures/{{$tutor->profile_picture}}" alt="profile picture"> 
                 @endif
                 <br>
             
