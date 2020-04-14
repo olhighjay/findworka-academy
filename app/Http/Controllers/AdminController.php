@@ -756,7 +756,7 @@ class AdminController extends Controller
             $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('cover_image')->getClientOriginalExtension();
             $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-            $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
+            $path = $request->file('cover_image')->storeAs('/image/cover_images', $fileNameToStore);
 
         }else{
             $fileNameToStore='noimage.jpg';
@@ -819,7 +819,7 @@ class AdminController extends Controller
             $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('cover_image')->getClientOriginalExtension();
             $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-            $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
+            $path = $request->file('cover_image')->storeAs('/image/cover_images', $fileNameToStore);
         };
       
         $post=Post::find($id);
