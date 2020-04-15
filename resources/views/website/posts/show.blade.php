@@ -16,7 +16,7 @@
 
  
     <div class="container">
-        <a href="/blog" class="btn btn-default" style="margin-top: 10px; background-color:cornflowerblue; color:cornsilk; border-radius=30px"> << Go Back </a>
+        <a href="/blog" class="btn btn-default" style="margin-top: 10px; background-color:cornflowerblue; color:cornsilk; border-radius=30px"> Go to Blog </a>
         <h2 style="margin-top: 20px">{{$post->title}}</h2>
         <img style="width:80%" src="/image/cover_images/{{$post->cover_image}}" height="70%" alt="cover image">
         <br>

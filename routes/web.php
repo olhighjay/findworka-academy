@@ -185,6 +185,9 @@ Route::prefix('admin')->group(function() {
 
     Route::delete('/ass-course/{course_id}}/{ass_id}/delete', 'AdminController@destroyAssignment');
 
+        #Admin download
+    Route::get('/ass-courses/{course_id}/ass/{ass_id}/{sub_id}/download', 'DownloadsController@assignmentDownloadAdmin');
+
         #Payment Management
     Route::get('/payments', 'AdminController@listPayments');
 
@@ -269,7 +272,7 @@ Route::prefix('admin')->group(function() {
 
 
 
-});
+});         #END OF ADMIN
 
 
 
@@ -312,8 +315,7 @@ Route::get('/', 'PagesController@home');
     #Tutor download
 Route::get('/ass-courses/{tutCourse_id}/ass/{ass_id}/{sub_id}/download', 'DownloadsController@assignmentDownload');
     
-    #Admin download
-Route::get('/ass-courses/{course_id}/ass/{ass_id}/{sub_id}/download', 'DownloadsController@assignmentDownloadAdmin');
+
 
 
 

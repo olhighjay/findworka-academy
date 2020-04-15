@@ -18,7 +18,7 @@ class DownloadsController extends Controller
         $assignment = $tutCourse->assignment()->find($ass_id);
         $submission = $assignment->submission()->find($sub_id);
         $file_name = $submission->solution;
-        $pathToFile = public_path('public/submissions/'.$file_name);
+        $pathToFile = public_path('/storage/submissions/'.$file_name);
         return response()->download($pathToFile);
       
     }
@@ -29,7 +29,7 @@ class DownloadsController extends Controller
         $assignment = $course->assignment()->find($ass_id);
         $submission = $assignment->submission()->find($sub_id);
         $file_name = $submission->solution;
-        $pathToFile = public_path('public/submissions/'.$file_name);
+        $pathToFile = public_path('/storage/submissions/'.$file_name);
         return response()->download($pathToFile);
       
     }

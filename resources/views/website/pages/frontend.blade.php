@@ -127,7 +127,7 @@
 
 
         <div class="jj">
-          <img src="/image/profile_pictures/findworka-map.jpg" width="300px" alt="">
+          <img src="/image/images/findworka-map.jpg" width="300px" alt="">
         </div>
 
         </div>

@@ -61,7 +61,7 @@ class StudentsController extends Controller
             $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('profile_picture')->getClientOriginalExtension();
             $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-            $path = $request->file('profile_picture')->storeAs('public/image/profile_pictures', $fileNameToStore);
+            $path = $request->file('profile_picture')->storeAs('public/profile_pictures', $fileNameToStore);
 
         }
 
