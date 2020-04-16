@@ -18,7 +18,7 @@ Route::get('/', function () {
 */
 
 
-// Auth::routes();
+// Auth::routes(); Verify is false instead of true so as to stop verify
 Auth::routes(['verify' => false]);
 
     #STUDENTS
