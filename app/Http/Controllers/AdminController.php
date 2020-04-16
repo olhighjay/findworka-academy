@@ -756,7 +756,7 @@ class AdminController extends Controller
             $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('cover_image')->getClientOriginalExtension();
             $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-            $path = $request->file('cover_image')->storeAs('public/image/cover_images', $fileNameToStore);
+            $path = $request->file('cover_image')->storeAs('public/covers', $fileNameToStore);
 
         }else{
             $fileNameToStore='noimage.jpg';
