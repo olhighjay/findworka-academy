@@ -7,7 +7,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laratrust\Traits\LaratrustUserTrait;
 
-class User extends Authenticatable implements MustVerifyEmail
+class User extends Authenticatable 
 {
     use LaratrustUserTrait;
     use Notifiable;
