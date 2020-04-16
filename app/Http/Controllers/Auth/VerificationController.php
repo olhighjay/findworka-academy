@@ -32,6 +32,7 @@ class VerificationController extends Controller
      *
      * @return void
      */
+        #Commented it out so it users could login on deployed site without d verification issue
     // public function __construct()
     // {
     //     $this->middleware('auth');

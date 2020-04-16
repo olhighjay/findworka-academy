@@ -56,7 +56,7 @@ class PaymentController extends Controller
         $payment = new Payment();
         $payment->user_id = $student->id;
         $payment->program_id = $paymentDetails['data']['metadata']['program_id'];
-        $payment->price = $paymentDetails['data']['amount']/100;
+        $payment->price = $paymentDetails['data']['amount'];
         $payment->purpose = $paymentDetails['data']['metadata']['purpose'];
         $payment->year = now()->year;
         $payment->save();

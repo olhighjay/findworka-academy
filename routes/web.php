@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 
 // Auth::routes();
-Auth::routes(['verify' => true]);
+Auth::routes(['verify' => false]);
 
     #STUDENTS
 Route::post('/dashboard', 'Auth\RegisterController@storeRegistrationForm');
