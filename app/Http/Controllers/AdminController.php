@@ -68,7 +68,7 @@ class AdminController extends Controller
             'email'=> 'required',
             'password'=> 'nullable',
             'gender'=> 'required',
-            'profile_picture'=>'image|nullable|max:1999'
+            'profile_picture'=>'image|nullable|max:4999'
         ]);
 
              // Handle file upload
@@ -78,7 +78,7 @@ class AdminController extends Controller
         $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
         $extension = $request->file('profile_picture')->getClientOriginalExtension();
         $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-        $path = $request->file('profile_picture')->storeAs('public/profile_pictures', $fileNameToStore);
+        $path = $request->file('profile_picture')->storeAs('public/storage/profile_pictures', $fileNameToStore);
 
     }
 
@@ -756,7 +756,7 @@ class AdminController extends Controller
             $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('cover_image')->getClientOriginalExtension();
             $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-            $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
+            $path = $request->file('cover_image')->storeAs('public/storage/cover_images', $fileNameToStore);
 
         }else{
             $fileNameToStore='noimage.jpg';

@@ -10,7 +10,7 @@
         @if($admin->profile_picture == null)
             <img class="mx-auto img-fluid  d-block" style="width:300px; height:310px" src="/storage/profile_pictures/noimage.jpg" alt="profile picture">
         @else
-            <img class="mx-auto img-fluid rounded-circle d-block" style="width:300px; height:300px"  src="/storage/profile_pictures/{{$admin->profile_picture}}" alt="profile picture"> 
+            <img class="mx-auto img-fluid rounded-circle d-block" style="width:300px; height:300px"  src="public/storage/profile_pictures/{{$admin->profile_picture}}" alt="profile picture"> 
         @endif
         <br>
         <br>
