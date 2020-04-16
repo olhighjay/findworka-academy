@@ -745,7 +745,7 @@ class AdminController extends Controller
         $this->validate($request,[
             'title'=> 'required',
             'body'=> 'required',
-            'cover_image'=>'image|nullable|max:1999',
+            'cover_image'=>'image|nullable|max:4999',
             'category'=> 'nullable',
         ]);
 
@@ -756,7 +756,7 @@ class AdminController extends Controller
             $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('cover_image')->getClientOriginalExtension();
             $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-            $path = $request->file('cover_image')->storeAs('public/storage/cover_images', $fileNameToStore);
+            $path = $request->file('cover_image')->storeAs('public/image/cover_images', $fileNameToStore);
 
         }else{
             $fileNameToStore='noimage.jpg';
