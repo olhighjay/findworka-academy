@@ -20,8 +20,8 @@
                 <textarea id="body" class="form-control" type="textarea" name="body" placeholder="Post body"></textarea>
                 <br>
 
-                <label for="cover_image"><b>Upload Picture</b></label>
-                <input id="cover_image" class="form-control" type="file" name="cover_image" >
+                <label for="file"><b>Upload Picture</b></label>
+                <input id="file" class="form-control" type="file" name="file" >
                 <br>
 
                 <label for="program">Select Category</label>

@@ -752,13 +752,12 @@ class AdminController extends Controller
 
             // Handle file upload
         $image = new Image();
-        if($request->hasFile('cover_image')){
-            $path = Storage::disk('s3')->put('images/posts', $request->file('cover_image'));
+        if($request->hasFile('file')){
+            $path = Storage::disk('s3')->put('images/originals', $request->file);
             $request->merge([
-                'size' => $request->file('cover_image')->getClientSize(),
+                'size' => $request->file->getClientSize(),
                 'path' => $path
             ]);
-            $image->type = "cover_image";
             $this->image->create($request->only('path', 'title', 'size'));
         }
         $image->save();
