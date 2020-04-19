@@ -741,7 +741,7 @@ class AdminController extends Controller
         return view('admin.posts.new')->with('programs', $programs);
     }
 
-    public function storePost(StoreImage $request)
+    public function storePost(Request $request)
     {
         $this->validate($request,[
             'title'=> 'required',
