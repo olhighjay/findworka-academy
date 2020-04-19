@@ -783,6 +783,8 @@ class AdminController extends Controller
         $post->category = $request->category;
         $post->save();
 
+        dd(config('filesystems.disks.s3.region'));
+
         return redirect('/admin/posts')->with('success', 'Post created');
     }
 
