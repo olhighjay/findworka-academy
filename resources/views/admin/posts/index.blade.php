@@ -13,7 +13,7 @@
                <div class="well"> 
                    <div class="row">
                        <div class="col-dm-4 col-sm-4">
-                       <img style="width:100%"  src= "{{ asset('/storage/covers/'.$post->cover_image) }}"  height="250px" alt="cover image">
+                       <img style="width:100%"  src= "{{ asset('public/storage/covers/'.$post->cover_image) }}"  height="250px" alt="cover image">
                        <br> <br> <br>
                        </div>
 

@@ -51,4 +51,9 @@ class Admin extends Authenticatable
       return $this->hasMany('App\Post');
     }
 
+    public function images()
+    {
+        return $this->hasMany(Image::class, 'auth_by')->latest();
+    }
+
 }

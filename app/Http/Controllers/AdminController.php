@@ -19,6 +19,7 @@ use App\Payment;
 use App\Payment_status;
 use App\Suspension;
 use App\Post;
+use App\Image;
 
 
 class AdminController extends Controller
@@ -740,7 +741,7 @@ class AdminController extends Controller
         return view('admin.posts.new')->with('programs', $programs);
     }
 
-    public function storePost(Request $request)
+    public function storePost(StoreImage $request)
     {
         $this->validate($request,[
             'title'=> 'required',
@@ -750,23 +751,35 @@ class AdminController extends Controller
         ]);
 
             // Handle file upload
+        $image = new Image();
         if($request->hasFile('cover_image')){
-            // Get filename with extension
-            $fileNameWithExt = $request->file('cover_image')->getClientOriginalName();
-            $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
-            $extension = $request->file('cover_image')->getClientOriginalExtension();
-            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-            $path = $request->file('cover_image')->storeAs('public/covers', $fileNameToStore);
-
-        }else{
-            $fileNameToStore='noimage.jpg';
+            $path = Storage::disk('s3')->put('images/posts', $request->file('cover_image'));
+            $request->merge([
+                'size' => $request->file('cover_image')->getClientSize(),
+                'path' => $path
+            ]);
+            $image->type = "cover_image";
+            $this->image->create($request->only('path', 'title', 'size'));
         }
+        $image->save();
+
+        // if($request->hasFile('cover_image')){
+        //     // Get filename with extension
+        //     $fileNameWithExt = $request->file('cover_image')->getClientOriginalName();
+        //     $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
+        //     $extension = $request->file('cover_image')->getClientOriginalExtension();
+        //     $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+        //     $path = $request->file('cover_image')->storeAs('public/covers', $fileNameToStore);
+
+        // }else{
+        //     $fileNameToStore='noimage.jpg';
+        // }
 
         $post= new Post();
         $post->title = $request->title;
         $post->body = $request->body;
         $post->admin_id = auth()->user()->id;
-        $post->cover_image = $fileNameToStore;
+        $post->cover_image = null;
         $post->category = $request->category;
         $post->save();
 

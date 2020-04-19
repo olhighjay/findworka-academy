@@ -82,6 +82,11 @@ class User extends Authenticatable implements MustVerifyEmail
       return $this->belongsTo('App\Suspension');  
     }
 
+    public function images()
+    {
+        return $this->hasMany(Image::class, 'auth_by')->latest();
+    }
+
 
     public function IsStudent()
     {
