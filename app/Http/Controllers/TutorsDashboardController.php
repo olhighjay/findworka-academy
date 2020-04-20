@@ -187,19 +187,19 @@ class TutorsDashboardController extends Controller
 
             // Handle file upload
         if($request->hasFile('profile_picture')){
-            // Get filename with extension
             $fileNameWithExt = $request->file('profile_picture')->getClientOriginalName();
             $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('profile_picture')->getClientOriginalExtension();
             $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-            $path = $request->file('profile_picture')->storeAs('public/profile_pictures', $fileNameToStore);
-
+            $filePath = 'images/profile_pictures/'. $fileNameToStore;
+            $path = Storage::disk('s3')->put($filePath , fopen($request->file('profile_picture'), 'r+'), 'public');
+            $url = url('https://findworkaacad.s3.amazonaws.com/'.$filePath);
         }
 
         #Save profile picture on database
         $user = Auth()->user();
         if($request->hasFile('profile_picture')){
-            $user->profile_picture = $fileNameToStore;
+            $user->profile_picture = $url;
         }
         $user->save();
 

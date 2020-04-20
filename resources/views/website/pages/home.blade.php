@@ -542,7 +542,7 @@
                     <div class="col-sm-6 col-lg-4 col-xl-4">
                         <div class="single-home-blog">
                             <div class="card">
-                                <img src="/image/cover_images/{{$post->cover_image}}" height="250px" width="100%" class="card-img-top" alt="blog">
+                                <img src="{{$post->cover_image}}" height="250px" width="100%" class="card-img-top" alt="blog">
                                 <div class="card-body">
                                     <a href="/blog/{{$post->title}}" class="btn_4" style="border-radius:15px">{{$post->category}}</a>
                                     <a href="/blog/{{$post->title}}">

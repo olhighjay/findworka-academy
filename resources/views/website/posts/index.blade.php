@@ -107,7 +107,7 @@
     
         <div id="wrapperHeader" class= "heo-image" style="margin-top: -20px; position:center">
             <div id="header">
-                @if($lastPost->cover_image != 'noimage.jpg')
+                @if($lastPost->cover_image != 'https://findworkaacad.s3.amazonaws.com/images/cover_images/noimage.jpg')
                     <img class= "heo-image" src="/image/cover_images/{{$lastPost->cover_image}}"  alt="">
                 @else 
                     <img src="/image/cover_images/blog2.jpg" alt="">
@@ -127,7 +127,7 @@
                <div class=""> 
                    <div class="row">
                        <div class="col-dm-4 col-sm-4">
-                       <img style="width:100%" src="/image/cover_images/{{$post->cover_image}}" height="250px" alt="cover image">
+                       <img style="width:100%" src="{{$post->cover_image}}" height="250px" alt="cover image">
                        <br> <br> <br>
                        </div>
                        

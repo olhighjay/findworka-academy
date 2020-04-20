@@ -72,16 +72,19 @@ class AdminController extends Controller
             'profile_picture'=>'image|nullable|max:4999'
         ]);
 
-             // Handle file upload
-    if($request->hasFile('profile_picture')){
-        // Get filename with extension
-        $fileNameWithExt = $request->file('profile_picture')->getClientOriginalName();
-        $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
-        $extension = $request->file('profile_picture')->getClientOriginalExtension();
-        $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-        $path = $request->file('profile_picture')->storeAs('public/storage/profile_pictures', $fileNameToStore);
-
-    }
+        
+            // Handle file upload
+        
+        if($request->hasFile('profile_picture')){
+            $fileNameWithExt = $request->file('profile_picture')->getClientOriginalName();
+            $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('profile_picture')->getClientOriginalExtension();
+            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+            $filePath = 'images/profile_pictures/'. $fileNameToStore;
+            $path = Storage::disk('s3')->put($filePath , fopen($request->file('profile_picture'), 'r+'), 'public');
+            $url = url('https://findworkaacad.s3.amazonaws.com/'.$filePath);
+        }
+            // Handle file upload
 
        $admin = Auth::user();
        $admin->firstname = $request['firstname'];
@@ -90,7 +93,7 @@ class AdminController extends Controller
        $admin->email = $request['email'];
        #Save profile picture on database
        if($request->hasFile('profile_picture')){
-        $admin->profile_picture = $fileNameToStore;
+        $admin->profile_picture = $url;
     }
        $admin->save();
 
@@ -753,12 +756,15 @@ class AdminController extends Controller
             // Handle file upload
         
         if($request->hasFile('cover_image')){
-            $image = new Image();
+        //     $image = new Image();
             // Get filename with extension
                 $fileNameWithExt = $request->file('cover_image')->getClientOriginalName();
                 $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
                 $extension = $request->file('cover_image')->getClientOriginalExtension();
                 $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+        } else{
+                $fileNameToStore = "noimage.jpg";
+        }
                 $filePath = 'images/cover_images/'. $fileNameToStore;
                 // $file = $request->cover_image;
                 // $ext = $file->getClientOriginalExtension();
@@ -766,12 +772,12 @@ class AdminController extends Controller
                 // $path = Storage::disk('s3')->put('images/originals', $fileNameToStore, fopen($request->file('cover_image'), 'r+'), 'public');
                 $path = Storage::disk('s3')->put($filePath , fopen($request->file('cover_image'), 'r+'), 'public');
                 $url = url('https://findworkaacad.s3.amazonaws.com/'.$filePath);
-            $image->size = $request->file('cover_image')->getClientSize();
-            $image->path = $path;
-            $image->title = "cover_image";
-            $image->type = "cover_image";
-            $image->save();
-
+            // $image->size = $request->file('cover_image')->getClientSize();
+            // $image->path = $path;
+            // $image->title = "cover_image";
+            // $image->type = "cover_image";
+            // $image->save();
+        
             // $path = Storage::disk('s3')->put('images/posts', $request->file('cover_image'));
             // $request->merge([
             //     'size' => $request->file('cover_image')->getClientSize(),
@@ -779,7 +785,7 @@ class AdminController extends Controller
             // ]);
             // $image->type = "cover_image";
             // $this->image->create($request->only('path', 'title', 'size'));
-        }
+        
         // if($request->hasFile('cover_image')){
         //     // Get filename with extension
         //     $fileNameWithExt = $request->file('cover_image')->getClientOriginalName();
