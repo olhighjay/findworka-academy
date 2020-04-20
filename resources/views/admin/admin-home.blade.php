@@ -8,7 +8,7 @@
         <!-- Profile picture -->
     
         @if($admin->profile_picture == null)
-            <img class="mx-auto img-fluid  d-block" style="width:300px; height:310px" src="https://findworkaacad.s3.amazonaws.com/images/cover_images/noimage.jpg" alt="profile picture">
+            <img class="mx-auto img-fluid  d-block" style="width:300px; height:310px" src="/image/cover_images/noimage.jpg" alt="profile picture">
         @else
             <img class="mx-auto img-fluid rounded-circle d-block" style="width:300px; height:300px"  src="{{$admin->profile_picture}}" alt="profile picture"> 
         @endif
