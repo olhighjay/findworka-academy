@@ -784,7 +784,7 @@ class AdminController extends Controller
             $post->title = $request->title;
             $post->body = $request->body;
             $post->admin_id = auth()->user()->id;
-            $post->cover_image = "https://findworkaacad.s3.amazonaws.com/images/cover_images/noimage.jpg";
+            $post->cover_image = "/image/cover_images/noimage.jpg";
             $post->category = $request->category;
             $post->save();
     }
