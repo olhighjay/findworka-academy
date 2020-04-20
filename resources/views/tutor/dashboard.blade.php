@@ -28,7 +28,7 @@
                 @if($tutor->profile_picture == null)
                     <img class="mx-auto img-fluid  d-block" style="width:300px; height:310px" src="/image/cover_images/noimage.jpg" alt="profile picture">
                 @else
-                    <img class="mx-auto img-fluid rounded-circle d-block" style="width:300px; height:300px"  src="/storage/profile_pictures/{{$tutor->profile_picture}}" alt="profile picture"> 
+                    <img class="mx-auto img-fluid rounded-circle d-block" style="width:300px; height:300px"  src="{{$tutor->profile_picture}}" alt="profile picture"> 
                 @endif
                 <br>
             
