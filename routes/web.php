@@ -18,6 +18,10 @@ Route::get('/', function () {
 */
 
 
+
+Route::get('/images', 'ImagesController@create')->name('images');
+Route::post('/upload', 'ImagesController@store')->name('uploadfile');
+
 // Auth::routes(); Verify is false instead of true so as to stop verify
 Auth::routes(['verify' => false]);
 

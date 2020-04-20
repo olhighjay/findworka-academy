@@ -751,13 +751,14 @@ class AdminController extends Controller
         ]);
 
             // Handle file upload
-        $image = new Image();
+        
         if($request->hasFile('cover_image')){
-            $file = $request->cover_image;
-            $ext = $file->getClientOriginalExtension();
-            $filename = uniqid().'.'.$ext;
-            $filePath = 'files/' . $filename;
-            Storage::disk('s3')->put($filePath, file_get_contents($file));
+            $image = new Image();
+                $file = $request->cover_image;
+                $ext = $file->getClientOriginalExtension();
+                $filename = uniqid().'.'.$ext;
+                $filePath = 'files/' . $filename;
+                Storage::disk('s3')->put($filePath, file_get_contents($file));
             $image->save();
 
             // $path = Storage::disk('s3')->put('images/posts', $request->file('cover_image'));
