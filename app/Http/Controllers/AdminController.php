@@ -754,11 +754,15 @@ class AdminController extends Controller
         
         if($request->hasFile('cover_image')){
             $image = new Image();
-                $file = $request->cover_image;
-                $ext = $file->getClientOriginalExtension();
-                $filename = uniqid().'.'.$ext;
-                $filePath = 'images/coverImages' . $filename;
-                $path = Storage::disk('s3')->put($filePath, file_get_contents($file));
+            // Get filename with extension
+                $fileNameWithExt = $request->file('cover_image')->getClientOriginalName();
+                $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
+                $extension = $request->file('cover_image')->getClientOriginalExtension();
+                $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+                // $file = $request->cover_image;
+                // $ext = $file->getClientOriginalExtension();
+                // $filename = uniqid().'.'.$ext;
+                $path = Storage::disk('s3')->put('images/coverImages', $fileNameToStore);
             
             $image->size = $request->file('cover_image')->getClientSize();
             $image->path = $path;
