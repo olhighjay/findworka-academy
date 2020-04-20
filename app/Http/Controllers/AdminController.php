@@ -770,7 +770,7 @@ class AdminController extends Controller
                 // $ext = $file->getClientOriginalExtension();
                 // $filename = uniqid().'.'.$ext;
                 // $path = Storage::disk('s3')->put('images/originals', $fileNameToStore, fopen($request->file('cover_image'), 'r+'), 'public');
-                $path = Storage::disk('s3')->put($filePath , $request->file('cover_image'), 'public');
+                $path = Storage::disk('s3')->put($filePath , $request->file('cover_image'), 'r+', 'public');
                 $url = url('https://findworkaacad.s3.amazonaws.com/'.$filePath);
             // $image->size = $request->file('cover_image')->getClientSize();
             // $image->path = $path;
