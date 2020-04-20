@@ -765,7 +765,7 @@ class AdminController extends Controller
                 // $filename = uniqid().'.'.$ext;
                 // $path = Storage::disk('s3')->put('images/originals', $fileNameToStore, fopen($request->file('cover_image'), 'r+'), 'public');
                 $path = Storage::disk('s3')->put($filePath , fopen($request->file('cover_image'), 'r+'), 'public');
-                $url = Storage::disk('s3')->url($path);
+                $url = Storage::disk('s3')->url($filePath);
             $image->size = $request->file('cover_image')->getClientSize();
             $image->path = $path;
             $image->title = "cover_image";
