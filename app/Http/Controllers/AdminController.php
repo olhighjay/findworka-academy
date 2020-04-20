@@ -765,7 +765,7 @@ class AdminController extends Controller
                 // $filename = uniqid().'.'.$ext;
                 // $path = Storage::disk('s3')->put('images/originals', $fileNameToStore, fopen($request->file('cover_image'), 'r+'), 'public');
                 $path = Storage::disk('s3')->put($filePath , fopen($request->file('cover_image'), 'r+'), 'public');
-            
+                $url = Storage::disk('s3')->url($path);
             $image->size = $request->file('cover_image')->getClientSize();
             $image->path = $path;
             $image->title = "cover_image";
@@ -796,9 +796,11 @@ class AdminController extends Controller
         $post->title = $request->title;
         $post->body = $request->body;
         $post->admin_id = auth()->user()->id;
-        $post->cover_image = "olajide";
+        $post->cover_image = $url;
         $post->category = $request->category;
-        $post->save();
+        $post = $post->save();
+
+        dd($post);
         
 
         return redirect('/admin/posts')->with('success', 'Post created');
