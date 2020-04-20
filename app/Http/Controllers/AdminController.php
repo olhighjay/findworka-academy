@@ -762,16 +762,33 @@ class AdminController extends Controller
                 $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
                 $extension = $request->file('cover_image')->getClientOriginalExtension();
                 $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-        } else{
-                $fileNameToStore = "noimage.jpg";
-        }
                 $filePath = 'images/cover_images/'. $fileNameToStore;
                 // $file = $request->cover_image;
                 // $ext = $file->getClientOriginalExtension();
                 // $filename = uniqid().'.'.$ext;
                 // $path = Storage::disk('s3')->put('images/originals', $fileNameToStore, fopen($request->file('cover_image'), 'r+'), 'public');
-                $path = Storage::disk('s3')->put($filePath , $request->file('cover_image'), 'r+', 'public');
+                $path = Storage::disk('s3')->put($filePath , fopen($request->file('cover_image'), 'r+'), 'public');
                 $url = url('https://findworkaacad.s3.amazonaws.com/'.$filePath);
+
+                #Store post's details
+                $post= new Post();
+                $post->title = $request->title;
+                $post->body = $request->body;
+                $post->admin_id = auth()->user()->id;
+                $post->cover_image = $url;
+                $post->category = $request->category;
+                $post->save();
+                
+        } else{
+            $post= new Post();
+            $post->title = $request->title;
+            $post->body = $request->body;
+            $post->admin_id = auth()->user()->id;
+            $post->cover_image = "https://findworkaacad.s3.amazonaws.com/images/cover_images/noimage.jpg";
+            $post->category = $request->category;
+            $post->save();
+    }
+                
             // $image->size = $request->file('cover_image')->getClientSize();
             // $image->path = $path;
             // $image->title = "cover_image";
@@ -798,13 +815,7 @@ class AdminController extends Controller
         //     $fileNameToStore='noimage.jpg';
         // }
 
-        $post= new Post();
-        $post->title = $request->title;
-        $post->body = $request->body;
-        $post->admin_id = auth()->user()->id;
-        $post->cover_image = $url;
-        $post->category = $request->category;
-        $post->save();
+
         
 
         return redirect('/admin/posts')->with('success', 'Post created');
@@ -851,23 +862,31 @@ class AdminController extends Controller
         ]);
 
         if($request->hasFile('cover_image')){
-            // Get filename with extension
-            $fileNameWithExt = $request->file('cover_image')->getClientOriginalName();
-            $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
-            $extension = $request->file('cover_image')->getClientOriginalExtension();
-            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-            $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
-        };
-      
-        $post=Post::find($id);
-        $post->title = $request->title;
-        $post->body = $request->body;
-        $post->category = $request->category;
-        if($request->hasFile('cover_image')){
-            $post->cover_image = $fileNameToStore;
-        }
-        $post->save();
+            //     $image = new Image();
+                // Get filename with extension
+                    $fileNameWithExt = $request->file('cover_image')->getClientOriginalName();
+                    $filename = pathInfo($fileNameWithExt, PATHINFO_FILENAME);
+                    $extension = $request->file('cover_image')->getClientOriginalExtension();
+                    $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+                    $filePath = 'images/cover_images/'. $fileNameToStore;
+                    // $file = $request->cover_image;
+                    // $ext = $file->getClientOriginalExtension();
+                    // $filename = uniqid().'.'.$ext;
+                    // $path = Storage::disk('s3')->put('images/originals', $fileNameToStore, fopen($request->file('cover_image'), 'r+'), 'public');
+                    $path = Storage::disk('s3')->put($filePath , fopen($request->file('cover_image'), 'r+'), 'public');
+                    $url = url('https://findworkaacad.s3.amazonaws.com/'.$filePath);
+                    
+            }
 
+            #Update post's details
+            $post=Post::find($id);
+            $post->title = $request->title;
+            $post->body = $request->body;
+            $post->category = $request->category;
+            if($request->hasFile('cover_image')){
+                $post->cover_image = $url;
+            }
+            $post->save();
         return redirect('/admin/posts')->with('success', 'Post has been updated successfully');
     }
 
