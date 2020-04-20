@@ -798,6 +798,8 @@ class AdminController extends Controller
         $post->admin_id = auth()->user()->id;
         $post->cover_image = $url;
         $post->category = $request->category;
+        $post->save();
+
         $post = $post->save();
 
         dd($post);
