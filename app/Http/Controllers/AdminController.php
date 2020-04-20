@@ -799,8 +799,6 @@ class AdminController extends Controller
         $post->cover_image = $url;
         $post->category = $request->category;
         $post->save();
-
-        return $post->cover_image;
         
 
         return redirect('/admin/posts')->with('success', 'Post created');
