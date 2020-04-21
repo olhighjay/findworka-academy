@@ -84,7 +84,7 @@ class AdminController extends Controller
             $path = Storage::disk('s3')->put($filePath , fopen($request->file('profile_picture'), 'r+'), 'public');
             $url = url('https://findworkaacad.s3.amazonaws.com/'.$filePath);
         }
-            // Handle file upload
+            // Store Admin details
 
        $admin = Auth::user();
        $admin->firstname = $request['firstname'];

@@ -10,6 +10,7 @@ use App\Assignment;
 use App\Course;
 use App\Submission;
 use App\Payment_status;
+use Illuminate\Support\Facades\Storage;
 
 class SubmissionsController extends Controller
 {
@@ -69,11 +70,18 @@ class SubmissionsController extends Controller
         ]);
 
 
+        // Handle file upload
+    
         if($request->hasFile('solution')){
             $solution = $request['solution'];
             $filename = $solution->getClientOriginalName();
-            $solution->storeAs('public/submissions',$filename);      
+            $fileNameToStore = $filename . '_' . time();
+            $filePath = 'files/submissions/'. $fileNameToStore;
+            $path = Storage::disk('s3')->put($filePath , file_get_contents($solution));
+            $url = url('https://findworkaacad.s3.amazonaws.com/'.$filePath);
         }
+
+
         $assignment= Assignment::find($ass_id);
 
         $submission = new Submission;
@@ -83,7 +91,7 @@ class SubmissionsController extends Controller
         $submission->body = $request['body'];
         $submission->grade = 0;
         $submission->remarks = 'Yet to be graded';
-        $submission->solution = $filename;
+        $submission->solution = $fileNameToStore;
         $submission->save();
 
         #SHOULD BE REDIRECTED TO SCORES!!

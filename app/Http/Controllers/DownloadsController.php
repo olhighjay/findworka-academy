@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Assignment;
 use App\Course;
 use App\Submission;
+use Illuminate\Support\Facades\Storage;
 
 
 class DownloadsController extends Controller
@@ -17,9 +18,9 @@ class DownloadsController extends Controller
         $tutCourse = $tutor->course()->find($tutCourse_id);
         $assignment = $tutCourse->assignment()->find($ass_id);
         $submission = $assignment->submission()->find($sub_id);
-        $file_name = $submission->solution;
-        $pathToFile = public_path('/storage/submissions/'.$file_name);
-        return response()->download($pathToFile);
+        $filename = $submission->solution;
+        // $pathToFile = public_path('/storage/submissions/'.$file_name);
+        return Storage::disk('s3')->download('files/submissions/'. $filename);
       
     }
 
@@ -28,9 +29,10 @@ class DownloadsController extends Controller
         $course = Course::find($course_id);
         $assignment = $course->assignment()->find($ass_id);
         $submission = $assignment->submission()->find($sub_id);
-        $file_name = $submission->solution;
-        $pathToFile = public_path('/storage/submissions/'.$file_name);
-        return response()->download($pathToFile);
+        $filename = $submission->solution;
+        // $pathToFile = public_path('/storage/submissions/'.$file_name);
+        return Storage::disk('s3')->download('files/submissions/'. $filename);
+      
       
     }
 }
