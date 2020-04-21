@@ -17,7 +17,7 @@
         </div>
         <hr>
 
-        @if(isset($submission->assignment_id))
+        @if($submission->user_id== $student->id)
             <h3 class="container" style="color:red">You have already submitted a solution to this assignment!</h3>
         @else 
             <form class="form-group" action="/assignments/{{$assignment->id}}/submitted" method="POST" enctype="multipart/form-data">

@@ -54,7 +54,7 @@ class SubmissionsController extends Controller
         // }
         
         
-        return view('student.submission.submit')->with('stuCourse', $stuCourse)->with('submission', $submission)->with('assignment', $assignment);
+        return view('student.submission.submit')->with('student', $student)->with('stuCourse', $stuCourse)->with('submission', $submission)->with('assignment', $assignment);
     }
 
     public function postSubmitAssignmentStu(Request $request, $ass_id)
@@ -75,7 +75,7 @@ class SubmissionsController extends Controller
         if($request->hasFile('solution')){
             $solution = $request['solution'];
             $filename = $solution->getClientOriginalName();
-            $fileNameToStore = $filename . '_' . time();
+            $fileNameToStore = $filename;
             $filePath = 'files/submissions/'. $fileNameToStore;
             $path = Storage::disk('s3')->put($filePath , file_get_contents($solution));
             $url = url('https://findworkaacad.s3.amazonaws.com/'.$filePath);
