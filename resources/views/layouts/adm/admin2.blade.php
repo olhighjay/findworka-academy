@@ -43,7 +43,7 @@
                 @if(Auth()->user()->profile_picture == null)
                     <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(/image/images/findworka-map.jpg);"></a>
                 @else
-                    <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(/storage/profile_pictures/{{Auth()->user()->profile_picture}});"></a>
+                    <a href="#" class="img logo rounded-circle mb-5" style="background-image: url({{$admin->profile_picture}});"></a>
                 @endif
                     <ul class="list-unstyled components mb-5">
 	            <li class="active">
