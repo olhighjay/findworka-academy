@@ -30,6 +30,30 @@ return [
     */
     'use_cache' => true,
 
+    /*|--------------------------------------------------------------------------
+    | Which permissions and role checker to use.
+    |--------------------------------------------------------------------------
+    |
+    | Defines if you want to use the roles and permissions checker.
+    | Available:
+    | - default: Check for the roles and permissions using the method that Laratrust
+                 has always used.
+    | - query: Check for the roles and permissions using direct queries to the database.
+    |           This method doesn't support cache yet.
+    |
+     */
+    'checker' => 'default',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Cache
+    |--------------------------------------------------------------------------
+    |
+    | Manage Laratrust's cache configurations. It uses the driver defined in the
+    | config/cache.php file.
+    |
+    */
+
     /*
     |--------------------------------------------------------------------------
     | Use teams feature in the package
@@ -40,6 +64,29 @@ return [
     |
     */
     'use_teams' => false,
+
+    'cache' => [
+        /*
+        |--------------------------------------------------------------------------
+        | Use cache in the package
+        |--------------------------------------------------------------------------
+        |
+        | Defines if Laratrust will use Laravel's Cache to cache the roles and permissions.
+        | NOTE: Currently the database check does not use cache.
+        |
+        */
+        'enabled' => true,
+
+        /*
+        |--------------------------------------------------------------------------
+        | Time to store in cache Laratrust's roles and permissions.
+        |--------------------------------------------------------------------------
+        |
+        | Determines the time in SECONDS to store Laratrust's roles and permissions in the cache.
+        |
+        */
+        'expiration_time' => 3600,
+    ],
 
     /*
     |--------------------------------------------------------------------------

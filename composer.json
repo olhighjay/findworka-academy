@@ -14,7 +14,7 @@
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.8.0",
         "league/flysystem-aws-s3-v3": "^1.0",
-        "santigarcor/laratrust": "5.0.*",
+        "santigarcor/laratrust": "5.2.*",
         "unicodeveloper/laravel-paystack": "^1.0"
     },
     "require-dev": {

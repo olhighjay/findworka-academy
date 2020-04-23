@@ -261,7 +261,8 @@ class AdminController extends Controller
             $user->course()->attach($course);
         }
         
-       $role = Role::where('name','=','Admin')->first();
+
+       $role = 2;
        $user->attachRole($role);
        
         return redirect('/admin/tutors')->with('success','Tutor created successfully');
