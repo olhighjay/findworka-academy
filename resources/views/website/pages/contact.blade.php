@@ -23,7 +23,7 @@
             text-align: left;
             position: absolute;
             top: 50%;
-            left: 20%;
+            left: 30%;
             transform: translate(-50%, -50%);
             color: white;
         }
@@ -53,7 +53,7 @@
 
         .btn1{
             border-radius: 10px  !important;
-            margin-left: 23%
+            margin-left: 28%
         }
     
     </style>
@@ -68,10 +68,10 @@
 
   <body>
 
-    <div class="heyo-image" style="margin-top: -20px">
+    <div class="heyo-image" >
         <div class="heyo-text">
             <h1 >Contact us</h1>
-            <p>Bringing IT dreams to reality</p>
+            <p style="color:white !important">Bringing IT dreams to reality</p>
             <a href="/register" class="btn btn-primary">Register Now!</a>
         </div>
     </div>

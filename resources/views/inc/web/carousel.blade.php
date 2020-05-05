@@ -1,4 +1,5 @@
 
+
         <!-- Carousel script -->
     <!------ Include the above in your HEAD tag ---------->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -18,36 +19,36 @@
         
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
-        <div class="item slides active">
-            <div class="slide-1"></div>
-            <div class="hero">
-            <hgroup>
-                <h1>Bringing IT to the World</h1>        
-                <h3>Making IT skills easy to acquire for the masses</h3>
-            </hgroup>
-            <a href="/about#features"><button class="btn btn-hero btn-lg" role="button">See all features</button></a>
+            <div class="item slides active">
+                <div class="slide-1"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>Bringing IT to the World</h1>        
+                        <h3>Making IT skills easy to acquire for the masses</h3>
+                    </hgroup>
+                    <a href="/about#features"><button class="btn btn-hero btn-lg" role="button">See all features</button></a>
+                </div>
             </div>
-        </div>
-        <div class="item slides">
-            <div class="slide-2"></div>
-            <div class="hero">        
-            <hgroup>
-                <h1>Simplifying IT</h1>        
-                <h3>Making IT as simple to assimilate as possible</h3>
-            </hgroup>       
-            <a href="/about#features"><button class="btn btn-hero btn-lg" role="button">See all features</button></a>
+            <div class="item slides">
+                <div class="slide-2"></div>
+                <div class="hero">        
+                    <hgroup>
+                        <h1>Simplifying IT</h1>        
+                        <h3>Making IT as simple to assimilate as possible</h3>
+                    </hgroup>       
+                    <a href="/about#features"><button class="btn btn-hero btn-lg" role="button">See all features</button></a>
+                </div>
             </div>
-        </div>
-        <div class="item slides">
-            <div class="slide-3"></div>
-            <div class="hero">        
-            <hgroup>
-                <h1>Building Digital World Leaders</h1>        
-                <h3>Training the next World leading digital Gurus</h3>
-            </hgroup>
-            <a href="/about#features"><button class="btn btn-hero btn-lg" role="button">See all features</button></a>
-        </div>
-
+            <div class="item slides">
+                <div class="slide-3"></div>
+                <div class="hero">        
+                    <hgroup>
+                        <h1>Building Digital World Leaders</h1>        
+                        <h3>Training the next World leading digital Gurus</h3>
+                    </hgroup>
+                    <a href="/about#features"><button class="btn btn-hero btn-lg" role="button">See all features</button></a>
+                </div>
+            </div>
         </div>
     </div>
 

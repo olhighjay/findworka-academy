@@ -20,13 +20,17 @@
     
     /* Place text in the middle of the image */
     .heyo-text {
-      text-align: left;
-      position: absolute;
-      top: 50%;
-      left: 20%;
-      transform: translate(-50%, -50%);
-      color: white;
-    }
+            text-align: left;
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        .fa{
+            color: midnightblue;
+        }
 
     
     
@@ -57,22 +61,21 @@
 
 
 
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" id="bootstrap-css">
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" id="bootstrap-css"> --}}
 
     
 
 
-    <div class="heyo-image" style="margin-top: -20px">
+    <div class="heyo-image">
         <div class="heyo-text">
             <h1 >About Us</h1>
-            <p>Bringing IT dreams to reality</p>
+            <p style="color:white !important">Bringing IT dreams to reality</p>
             <a href="/register" class="btn btn-primary">Register Now!</a>
         </div>
     </div>
 
     <br> <br>
-    <div class="container paddingTB60" >
+    <div class="container " >
         <div class="row col-md-10">
 
             <div>

@@ -1,16 +1,24 @@
-<nav class="navbar navbar-expand-md navbar-dark  shadow-sm" style="background-color: navy" >
+<nav class="navbar navbar-expand-md navbar-dark shadow-sm" style="background-color: navy" >
   <div class="container">
     <a class="navbar-brand" href="/">
       <img src="/image/images/findworka-logo1.png" width="120" height="30"  alt="Findworka academy logo">
     </a>
 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: navy; padding-left:15px">
       <!-- Left Side Of Navbar -->
       <ul class="navbar-nav mr-auto">
+
+      </ul>
+
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/">Home </a>
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -40,7 +48,6 @@
       </ul>
       
       <!-- Right Side Of Navbar -->
-      <div  class="pull-right" style="float: right;">
         <ul class="navbar-nav ml-auto">
           <!-- Authentication Links -->
           @guest
@@ -75,7 +82,6 @@
               </li>
           @endguest
         </ul>
-      </div>
     </div>
   </div>
 </nav>

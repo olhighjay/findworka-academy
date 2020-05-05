@@ -39,7 +39,7 @@
 		<div class="wrapper d-flex align-items-stretch">
             <nav id="sidebar">
 
-				<div class="p-4 pt-5" style="height:100%">
+				<div class="p-4 pt-5">
                 @if(Auth()->user()->profile_picture == null)
                     <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(/image/images/findworka-map.jpg);"></a>
                 @else
@@ -181,41 +181,41 @@
 	    </div>
     	</nav>
 
-        <!-- Page Content  -->
-        <div id="content" class="p-4 p-md-5">
-            <a hef="/"><img src="/image/images/findworka-sticker1.png"  alt="merkery_logo" style="width:150px"></a>
-                
+            <!-- Page Content  -->
+            <div id="content" class="p-4 p-md-5">
+                <a hef="/"><img src="/image/images/findworka-sticker1.png"  alt="merkery_logo" style="width:150px"></a>
+                    
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+                <div class="container-fluid">
 
-                <button type="button" id="sidebarCollapse" class="btn btn-primary">
-                <i class="fa fa-bars"></i>
-                <span class="sr-only">Toggle Menu</span>
-                </button>
-                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
                     <i class="fa fa-bars"></i>
-                </button>
+                    <span class="sr-only">Toggle Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/" target="_blank" >Visit Website</a>
-                    </li>
-                    
-                    <li>
-                        <a class="dropdown-item" href="{{ route('admin.logout') }}"
-                        onclick="event.preventDefault();
-                                        document.getElementById('ad-logout-form').submit();">
-                            Logout
-                        </a>
-                    
-                        <form id="ad-logout-form" action="{{ route('admin.logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                    </li>
-                </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/" target="_blank" >Visit Website</a>
+                            </li>
+                            
+                            <li>
+                                <a class="dropdown-item" href="{{ route('admin.logout') }}"
+                                onclick="event.preventDefault();
+                                                document.getElementById('ad-logout-form').submit();">
+                                    Logout
+                                </a>
+                            
+                                <form id="ad-logout-form" action="{{ route('admin.logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
             </nav>
 
 <!-- PAGE CONTENT -->  

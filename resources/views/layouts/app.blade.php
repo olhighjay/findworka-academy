@@ -20,22 +20,22 @@
     <!-- Styles -->
         <!-- laravel bootstrap -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
 
                 <!-- TEMPLATES -->
             <!-- Styles -->
-        <!-- carousel bootstrap -->
-    <link href="{{ asset('css/carousel.css') }}" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <!-- Tutor Dashboard -->
-    <link href="{{ asset('css/tutdash.css') }}" rel="stylesheet">
+            
+            <!-- carousel bootstrap -->
+    {{-- <link href="{{ asset('css/carousel.css') }}" rel="stylesheet"> --}}
+    {{-- <link href="{{ asset('css/carousel2.css') }}" rel="stylesheet"> --}}
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    {{-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <!-- Tutor Dashboard --> --}}
+    {{-- <link href="{{ asset('css/tutdash.css') }}" rel="stylesheet"> --}}
 
         <!-- Scripts -->
-
+    
     <!-- Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     
@@ -43,23 +43,6 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     
 
-    {{-- <link rel="icon" href="img/favicon.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/etrain/bootstrap.min.css">
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="css/etrain/animate.css">
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="css/etrain/owl.carousel.min.css">
-    <!-- themify CSS -->
-    <link rel="stylesheet" href="css/etrain/themify-icons.css">
-    <!-- flaticon CSS -->
-    <link rel="stylesheet" href="css/etrain/flaticon.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/etrain/magnific-popup.css">
-    <!-- swiper CSS -->
-    <link rel="stylesheet" href="css/etrain/slick.css">
-    <!-- style CSS -->
-    <link rel="stylesheet" href="css/etrain/style.css"> --}}
     <style>
         /* h1,h2,h3{
             color:#0B0A49 !important; */

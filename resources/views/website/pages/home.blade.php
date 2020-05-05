@@ -9,112 +9,7 @@
         
         
         <style type="text/css">
-            
-            h2 {
-                color: #0c2e60 !important;
-                text-align: center;
-                text-transform: uppercase;
-                font-family: inherit;
-                /* font-weight: bold; */
-                position: relative;
-                margin: 25px 0 50px;
-                font-weight: 700 !important;
-                font-size: 30px;
-                line-height: 40px;
-            }
-            h2::after {
-                content: "";
-                width: 100px;
-                position: absolute;
-                margin: 0 auto;
-                height: 3px;
-                background: #ca0909;
-                left: 0;
-                right: 0;
-                bottom: -10px;
-            }
-            .jcarousel {
-                width: 650px;
-                margin: 0 auto;
-                padding-bottom: 50px;
-            }
-            .jcarousel .jitem {
-                color: #999;
-                font-size: 14px;
-                text-align: center;
-                overflow: hidden;
-                min-height: 340px;
-            }
-            .jcarousel .jitem a {
-                color: #eb7245;
-            }
-            .jcarousel .jimg-box {
-                width: 145px;
-                height: 145px;
-                margin: 0 auto;
-                border-radius: 50%;
-            }
-            .jcarousel .jimg-box img {
-                width: 100%;
-                height: 100%;
-                display: block;
-                border-radius: 50%;
-            }
-            .jcarousel .testimonial {	
-                padding: 30px 0 10px;
-            }
-            .jcarousel .overview {	
-                text-align: center;
-                padding-bottom: 5px;
-            }
-            .jcarousel .overview b {
-                color: #333;
-                font-size: 15px;
-                text-transform: uppercase;
-                display: block;	
-                padding-bottom: 5px;
-            }
-            .jcarousel .star-rating i {
-                font-size: 18px;
-                color: #ffdc12;
-            }
-            .jcarousel .carousel-control {
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                background: #999;
-                text-shadow: none;
-                top: 4px;
-            }
-            .carousel-control i {
-             
-                font-size: 20px;
-                margin-right: 2px;
-            }
-            .carousel-control.left {
-                left: auto;
-                right: 40px;
-            }
-            .carousel-control.right i {
-                margin-right: -2px;
-            }
-            .carousel .carousel-indicators {
-                bottom: 15px;
-            }
-            .carousel-indicators li, .carousel-indicators li.active {
-                width: 11px;
-                height: 11px;
-                margin: 1px 5px;
-                border-radius: 50%;
-            }
-            .carousel-indicators li {	
-                background: #e2e2e2;
-                border-color: transparent;
-            }
-            .carousel-indicators li.active {
-                border: none;
-                background: #888;		
-            }
+           
             </style>
 
 
@@ -122,7 +17,9 @@
 
     </head>
 @section('content')
-    @include('inc.web.carousel')
+    {{-- @include('inc.web.carousel') --}}
+    @include('inc.web.carousel2')
+    {{-- @include('inc.web.carousel3') --}}
 
 
 
@@ -135,7 +32,7 @@
   
     <!-- banner part start-->
 
-    
+<div class="container"> 
     <!-- feature_part start-->
     <br> <br> <br> <br> <br>
     <section class="feature_part">
@@ -448,79 +345,14 @@
     <br> <br> <br> <br> <br> <br> <br>
 
     <!-- TESTIMONIAL START -->
-    <hr> <br>
-    <section class="testimonial_part">
-        <div class="section_title">
-            <h2>Testimonials</h2>
-        </div>
-        <div id="myCarousel" class="jcarousel slide" data-ride="carousel">
-            <!-- Carousel indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>   
-            <!-- Wrapper for carousel items -->
-            <div class="carousel-inner">		
-                <div class="jitem carousel-item active">
-                    <br>
-                    <div class="jimg-box"><img src="/image/images/ileri.jpeg" alt=""></div>
-                    <p class="testimonial">From the deepest part of my heart, I want to thank Findworka academy for the transformational 
-                        works they do on their students like me which has helped me to acquire thinga I've achieved in the IT world.</p>
-                    <p class="overview"><b>Adebayo Ileriayo</b>Back-end Dev. gradutae at <a href="#">Findworka Academy</a></p>
-                    <div class="star-rating">
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="jitem carousel-item">
-                    <br>
-                    <div class="jimg-box"><img src="/image/images/mato.jpeg" alt=""></div>
-                    <p class="testimonial">Findworka academy never fails. A try will convince anybody. They make learning of programing as simple as learning A, B, C 
-                        and they give full support to their students durimg amd after their time at the academy</p>
-                    <p class="overview"><b>Mato Martins</b>Back-end Dev. gradutae at <a href="#">Findworka Academy</a></p>
-                    <div class="star-rating">
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="jitem carousel-item">
-                    <br>
-                    <div class="jimg-box"><img src="/image/images/eje.jpeg" alt=""></div>
-                    <p class="testimonial">I enrolled into findworka academy having no idea about backend or any programing at all. I was totally a novice that had no idea whatsoever about programming but Findworka academy picked me up and made me a big shot in te IT industry</p>
-                    <p class="overview"><b>Bosipo Afeedufona</b>Back-end Dev. gradutae at <a href="#">Findworka Academy</a></p>
-                    <div class="star-rating">
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
-                        </ul>
-                    </div>
-                </div>		
-            </div>
-            <!-- Carousel controls -->
-            <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
-                <i class="fa fa-angle-left"></i>
-            </a>
-            <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
-                <i class="fa fa-angle-right"></i>
-            </a>
-        </div>
-    </section>
+
+    @include('inc.web.testimonial')
+
+
+    {{-- <hr> <br>
+
     <!-- End Testimonial -->
-    <hr>
+    <hr> --}}
 
 
 
@@ -563,6 +395,8 @@
     </section>
     <!--::Blog Part end::-->
 
+    
+</div>   
 
     <!-- footer part start-->
 
