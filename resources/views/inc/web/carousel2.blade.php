@@ -36,7 +36,7 @@
         </div>
         <div class="carousel-caption text-center">
           {{-- <h3 class="h3-responsive">BUILDING DIGITAL WORLD LEADERS</h3> --}}
-          <h1>BUILDING WORLD IT LEADERS</h1>
+          <h1>CREATING TECH MAGIC</h1>
           <p  class="lead" style="color: white;">Training the Next World LEADING Tech Gurus</p>
           <button role="button" class="btn btn-primary">See all features</button>
         </div>
