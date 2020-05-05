@@ -34,7 +34,7 @@
 
 <div class="container"> 
     <!-- feature_part start-->
-    <br> <br> <br> <br> <br>
+    <br> 
     <section class="feature_part">
         <div class="container">
             <div class="row">

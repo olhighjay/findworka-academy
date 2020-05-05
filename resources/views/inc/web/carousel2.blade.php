@@ -24,7 +24,7 @@
         <div class="carousel-caption text-center">
           <h1>BRINGING IT TO THE WORLD</h1>
           <p  class="lead" style="color: white;"> Making IT skills easy to Acquire for the Masses</p>
-          <button role="button" class="btn btn-primary">See all features</button>
+          <a href="/about#features"><button role="button" class="btn btn-primary">See all features</button></a>
         </div>
       </div>
       <div class="carousel-item">
@@ -38,7 +38,7 @@
           {{-- <h3 class="h3-responsive">BUILDING DIGITAL WORLD LEADERS</h3> --}}
           <h1>CREATING TECH MAGIC</h1>
           <p  class="lead" style="color: white;">Training the Next World LEADING Tech Gurus</p>
-          <button role="button" class="btn btn-primary">See all features</button>
+          <a href="/about#features"><button role="button" class="btn btn-primary">See all features</button></a>
         </div>
         
       </div>
@@ -52,7 +52,7 @@
         <div class="carousel-caption">
           <h1>SIMPLIFYING IT</h1>
           <p  class="lead" style="color: white;">Making IT as Simple to Assimilate as Possible</p>
-          <button role="button" class="btn btn-primary">See all features</button>
+          <a href="/about#features"><button role="button" class="btn btn-primary">See all features</button></a>
         </div>
       </div>
     </div>
