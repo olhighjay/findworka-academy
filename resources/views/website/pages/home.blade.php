@@ -383,7 +383,7 @@
                                     <p>{!!str_limit($post->body, 150)!!}</p>
                                     <ul>
                                         <li> <span class="ti-comments"></span>Written By</li>
-                                        <li> <span class="ti-heart"></span>{{$post->admin->firstname}}/li>
+                                        <li> <span class="ti-heart"></span>{{$post->admin->firstname}}</li>
                                     </ul>
                                 </div>
                             </div>
