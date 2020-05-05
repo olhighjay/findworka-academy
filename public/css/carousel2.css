@@ -13,7 +13,7 @@
       background-color: #9d9d9d;
       border: 1px solid white;
       margin-right: 10px;;
-      /* margin-left: 10px;; */
+      margin-left: 10px;;
   }
   #carousel-example-2 > .carousel-indicators > .active {
       background-color: rgb(231, 13, 60);
@@ -23,8 +23,8 @@
     right: 38%;
     text-align: center;
     max-width: 450px;
-    min-width: 310px;
-    margin-right: 5px;;
+    min-width: 290px;
+    margin-right: 150px;;
     /* margin-left: 2%; */
     /* left: auto; */
       top: auto;
