@@ -68,7 +68,7 @@
         }
 
         div#wrapperHeader div#header {
-        width:1000px;
+        width:100%;
         height:400px;
         margin:0 auto;
         }
